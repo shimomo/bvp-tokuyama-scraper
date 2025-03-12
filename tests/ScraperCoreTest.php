@@ -91,4 +91,18 @@ final class ScraperCoreTest extends TestCase
 
         $this->scraper->scrapeTimes(1, '2025-01-02');
     }
+
+    /**
+     * @return void
+     */
+    public function testInvalidWithRaceCode1AndDate20250102(): void
+    {
+        $this->expectException(\BadMethodCallException::class);
+        $this->expectExceptionMessage(
+            "BVP\TokuyamaScraper\ScraperCore::__call() - " .
+            "Call to undefined method 'BVP\TokuyamaScraper\ScraperCore::invalid()'."
+        );
+
+        $this->scraper->invalid(1, '2025-01-02');
+    }
 }

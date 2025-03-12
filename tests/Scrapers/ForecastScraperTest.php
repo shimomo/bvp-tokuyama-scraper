@@ -38,4 +38,18 @@ final class ForecastScraperTest extends TestCase
 
         $this->scraper->scrape(1, '2025-01-02');
     }
+
+    /**
+     * @return void
+     */
+    public function testInvalidWithRaceCode1AndDate20250102(): void
+    {
+        $this->expectException(\BadMethodCallException::class);
+        $this->expectExceptionMessage(
+            "BVP\TokuyamaScraper\Scrapers\BaseScraper::__call() - " .
+            "Call to undefined method 'BVP\TokuyamaScraper\Scrapers\BaseScraper::invalid()'."
+        );
+
+        $this->scraper->invalid(1, '2025-01-02');
+    }
 }

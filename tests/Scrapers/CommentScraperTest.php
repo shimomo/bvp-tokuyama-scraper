@@ -44,7 +44,7 @@ final class CommentScraperTest extends TestCase
     {
         $this->expectException(\RuntimeException::class);
         $this->expectExceptionMessage(
-            "BVP\TokuyamaScraper\Scrapers\CommentScraper::scrapeYesterday() - " .
+            "BVP\TokuyamaScraper\Scrapers\CommentScraper::scrape() - " .
             "The specified key '.com-rname' is not found in the content of the URL: " .
             "'https://www.boatrace-tokuyama.jp/modules/yosou/syussou.php?day=20250102&race=1'."
         );

@@ -40,7 +40,7 @@ final class CommentScraperTest extends TestCase
     /**
      * @return void
      */
-    public function testScrapeWithRaceCode1AndDate20250102(): void
+    public function testThrowsExceptionWhenKeyNotFound(): void
     {
         $this->expectException(\RuntimeException::class);
         $this->expectExceptionMessage(

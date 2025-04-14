@@ -60,9 +60,9 @@ final class TimeScraperTest extends TestCase
         $this->expectException(\BadMethodCallException::class);
         $this->expectExceptionMessage(
             "BVP\TokuyamaScraper\Scrapers\BaseScraper::__call() - " .
-            "Call to undefined method 'BVP\TokuyamaScraper\Scrapers\BaseScraper::invalid()'."
+            "Call to undefined method 'BVP\TokuyamaScraper\Scrapers\BaseScraper::ghost()'."
         );
 
-        $this->scraper->invalid(1, '2025-01-02');
+        $this->scraper->ghost(1, '2025-01-02');
     }
 }

@@ -80,7 +80,7 @@ final class ScraperCoreTest extends TestCase
     /**
      * @return void
      */
-    public function testScrapeTimesWithRaceCode1AndDate20250102(): void
+    public function testThrowsExceptionWhenKeyNotFoundInTimes(): void
     {
         $this->expectException(\RuntimeException::class);
         $this->expectExceptionMessage(

@@ -12,5 +12,20 @@
 composer require bvp/tokuyama-scraper
 ```
 
+## Usage
+```php
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+use BVP\TokuyamaScraper\Scraper;
+
+print_r(Scraper::scrapeComments(12));
+print_r(Scraper::scrapeComments(12, '2025-03-24'));
+
+print_r(Scraper::scrapeTimes(12));
+print_r(Scraper::scrapeTimes(12, '2025-03-24'));
+```
+
 ## License
 The BVP Tokuyama Scraper package is open source software licensed under the [MIT license](LICENSE).

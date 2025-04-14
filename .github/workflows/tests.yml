@@ -36,6 +36,4 @@ jobs:
     - name: Upload Codecov
       uses: codecov/codecov-action@v5
       with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        slug: shimomo/bvp-tokuyama-scraper
         files: build/coverage-xml/coverage.xml

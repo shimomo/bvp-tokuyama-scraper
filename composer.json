@@ -1,14 +1,26 @@
 {
+    "$schema": "https://getcomposer.org/schema.json",
     "name": "bvp/tokuyama-scraper",
     "description": "The BVP Tokuyama Scraper package for Boatrace.",
+    "keywords": [
+        "boatrace",
+        "japan",
+        "japanese",
+        "library",
+        "scraper"
+    ],
     "license": "MIT",
     "type": "library",
     "authors": [
         {
             "name": "shimomo",
-            "email": "developer@shimomo.net"
+            "email": "bvp@shimomo.net"
         }
     ],
+    "support": {
+        "issues": "https://github.com/shimomo/bvp-tokuyama-scraper/issues",
+        "source": "https://github.com/shimomo/bvp-tokuyama-scraper"
+    },
     "require": {
         "php": "^8.2",
         "bvp/scraper-core": "^4.0",

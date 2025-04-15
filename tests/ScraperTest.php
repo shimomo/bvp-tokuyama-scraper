@@ -30,7 +30,7 @@ final class ScraperTest extends TestCase
      * @param  array  $expected
      * @return void
      */
-    #[DataProviderExternal(ScraperCoreDataProvider::class, 'scrapeTimesProvider')]
+    #[DataProviderExternal(ScraperDataProvider::class, 'scrapeTimesProvider')]
     public function testScrapeTimes(array $arguments, array $expected): void
     {
         $this->assertSame($expected, Scraper::scrapeTimes(...$arguments));

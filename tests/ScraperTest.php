@@ -19,7 +19,7 @@ final class ScraperTest extends TestCase
      * @param  array  $expected
      * @return void
      */
-    #[DataProviderExternal(ScraperCoreDataProvider::class, 'scrapeCommentsProvider')]
+    #[DataProviderExternal(ScraperDataProvider::class, 'scrapeCommentsProvider')]
     public function testScrapeComments(array $arguments, array $expected): void
     {
         $this->assertSame($expected, Scraper::scrapeComments(...$arguments));

@@ -50,10 +50,10 @@ class TimeScraper extends BaseScraper implements TimeScraperInterface
             $racerLapTime = Normalizer::normalize($times['.col11'][$boatNumber + 1] ?? 0.0);
             $racerTurnTime = Normalizer::normalize($times['.col12'][$boatNumber - 1] ?? 0.0);
 
-            $response['boat_number_' . $boatNumber . '_racer_name'] = $racerName;
-            $response['boat_number_' . $boatNumber . '_racer_exhibition_time'] = $racerExhibitionTime;
-            $response['boat_number_' . $boatNumber . '_racer_lap_time'] = $racerLapTime;
-            $response['boat_number_' . $boatNumber . '_racer_turn_time'] = $racerTurnTime;
+            $response["boat_number_{$boatNumber}_racer_name"] = $racerName;
+            $response["boat_number_{$boatNumber}_racer_exhibition_time"] = $racerExhibitionTime;
+            $response["boat_number_{$boatNumber}_racer_lap_time"] = $racerLapTime;
+            $response["boat_number_{$boatNumber}_racer_turn_time"] = $racerTurnTime;
         }
 
         return $response;

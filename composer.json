@@ -1,7 +1,7 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
     "name": "bvp/tokuyama-scraper",
-    "description": "The BVP Tokuyama Scraper for Boatrace.",
+    "description": "Tokuyama Scrape for Boatrace Venture Project",
     "keywords": [
         "boatrace",
         "library",
@@ -21,7 +21,7 @@
     },
     "require": {
         "php": "^8.2",
-        "bvp/scraper-core": "^5.0",
+        "bvp/scraper-core": "^5.3",
         "nesbot/carbon": "^2.63 || ^3.0"
     },
     "require-dev": {
